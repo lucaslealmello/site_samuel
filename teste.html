@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz aniversario, samuel!</title>
+    <style>
+        body {
+            background-image: linear-gradient(45deg, black, blue);/* Cor de fundo */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            background-color: rgb(180, 165, 165); /* Cor de fundo da área central */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .message {
+            margin-bottom: 20px;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .button-container button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #ff5733;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, transform 0.3s;
+            margin: 0 10px;
+        }
+
+        .button-container button:hover {
+            background-color: #c70039;
+            transform: translateY(-2px);
+        }
+
+        .button-container button:active {
+            background-color: #900c3f;
+            transform: translateY(2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="message">
+            <p>Quem é melhor?</p>
+        </div>
+        
+        <div class="button-container">
+            <button onclick="mostrarMensagem()">Gabigol</button>
+            <button onclick="mostrarMensagem()">Tiquinho</button>
+        </div>
+    </div>
+
+    <script>
+        function mostrarMensagem() {
+            alert('Respota certa: Gabigol');
+        }
+    </script>
+</body>
+</html>
